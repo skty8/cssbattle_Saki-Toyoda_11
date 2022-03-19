@@ -1,94 +1,56 @@
-<div class="left_parts"></div>
-<div class="left_parts_layer"></div>
-<div class="center_parts"></div>
-<div class="center_parts_layer"></div>
-<div class="center_parts_in"></div>
-<div class="right_parts"></div>
-<div class="right_parts_layer"></div>
+<div class="container">
+    <div class="left_parts side"></div>
+    <div class="center_parts">
+        <div class="center_parts_in"></div>
+    </div>
+    <div class="right_parts side"></div>
+</div>
 
 <style>
     body {
+        background: #191210;
+    }
+
+    .container {
         position: relative;
-        background: #191210;
-        margin: 0;
-    }
-
-    div {
-        position: absolute;
-    }
-
-    .center_parts_layer,
-    .left_parts_layer,
-    .right_parts_layer {
-        background: #191210;
-    }
-
-    .left_parts,
-    .center_parts,
-    .right_parts {
-        background: #ECA03D;
-    }
-
-    .center_parts,
-    .center_parts_layer,
-    .center_parts_in {
-        border-radius: 50%;
-    }
-
-    .center_parts {
-        top: 80px;
-        left: 130px;
-        width: 140px;
+        width: 300px;
         height: 140px;
+        margin: 80px auto;
     }
 
-    .center_parts_layer {
-        top: 100px;
-        left: 150px;
-        width: 100px;
-        height: 100px;
-    }
-
-    .center_parts_in {
-        background: #84271C;
-        top: 125px;
-        left: 175px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .left_parts,
-    .right_parts {
-        width: 100px;
-        height: 50px;
+    .side {
+        position: absolute;
+        border: 20px solid #ECA03D;
+        width: 60px;
+        height: 30px;
     }
 
     .left_parts {
-        top: 150px;
-        left: 50px;
+        top: 70px;
+        border-top: 0;
         border-radius: 0 0 100px 100px;
     }
 
     .right_parts {
-        bottom: 150px;
-        right: 50px;
+        bottom: 70px;
+        right: 0;
+        border-bottom: 0;
         border-radius: 100px 100px 0 0;
     }
 
-    .left_parts_layer,
-    .right_parts_layer {
+    .center_parts {
+        border: 20px solid #ECA03D;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
     }
 
-    .left_parts_layer {
-        top: 120px;
-        left: 70px;
-    }
-
-    .right_parts_layer {
-        bottom: 120px;
-        right: 70px;
+    .center_parts_in {
+        background: #84271C;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 25px auto;
     }
 </style>
